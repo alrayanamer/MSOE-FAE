@@ -20,6 +20,7 @@ const Navbar = () => {
 
     return (
         <div>
+            <div className='filler'></div>
         <nav>
 
         <div className="logo-container">
@@ -32,11 +33,11 @@ const Navbar = () => {
             <button className='nav-button' onClick={navigateHome}>
                 Home
             </button>
-            <button className='nav-button' onClick={navigateContact}>
-                Contact 
-            </button>
             <button className='nav-button' onClick={navigateSponsors}>
                 Sponsors 
+            </button>
+            <button className='nav-button' onClick={navigateContact}>
+                Contact 
             </button>
         </div>
 

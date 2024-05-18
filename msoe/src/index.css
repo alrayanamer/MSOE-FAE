@@ -15,11 +15,12 @@ nav {
   display: flex;
   justify-content: space-between;
   background: #C42228;
+  
 }
 
 nav .logo-container {
   width: 170px;
-  margin: 15px;
+  
   background: transparent;
   border: transparent;
   cursor: pointer;
@@ -34,17 +35,17 @@ nav .button-container {
 }
 
 nav .nav-button {
-  color: black;
-  background-color: #fff;
+  color: white;
+  background: none;
   font-size: 30px;
   padding: 20px 20px;
-  border-radius: 10px;
   border: none;
   margin: 10px;
   cursor: pointer;
-  
+  transition: 0.75s;
 }
 
 nav .nav-button:hover {
-  
+  color: black;
 }
+
