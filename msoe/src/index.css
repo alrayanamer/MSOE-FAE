@@ -14,6 +14,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background: #C42228;
 }
 
 nav .logo-container {
@@ -41,4 +42,9 @@ nav .nav-button {
   border: none;
   margin: 10px;
   cursor: pointer;
+  
+}
+
+nav .nav-button:hover {
+  
 }
