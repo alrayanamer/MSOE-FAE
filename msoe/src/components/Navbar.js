@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import logo from '../components2/logo.png'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -17,10 +17,13 @@ const Navbar = () => {
         navigate('/sponsors');
     }
 
+    const navigateGallery = () => {
+        navigate('/gallery');
+    }
+
 
     return (
         <div>
-            <div className='filler'></div>
         <nav>
 
         <div className="logo-container">
@@ -29,9 +32,11 @@ const Navbar = () => {
             </button>
         </div>
 
-        <div className='button-container'>
             <button className='nav-button' onClick={navigateHome}>
                 Home
+            </button>
+            <button className='nav-button' onClick={navigateGallery}>
+                Gallery 
             </button>
             <button className='nav-button' onClick={navigateSponsors}>
                 Sponsors 
@@ -39,7 +44,7 @@ const Navbar = () => {
             <button className='nav-button' onClick={navigateContact}>
                 Contact 
             </button>
-        </div>
+        
 
         </nav>
         </div>
